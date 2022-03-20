@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout-ShopLane</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31b4c6c149.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="./checkout.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav id="top-bar">
+            <div id="left-menu">
+                <div id="logo"> <a href="./index.html"><span>SHOP</span>LANE</a>
+                </div>
+
+                <a href="./index.html#clothng-section" class="home-links">Clothing</a>
+                <a href="./index.html#accessories-section" class="home-links">Accessories</a>
+            </div>
+            <div id="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-box" placeholder="Search for cloths or accessories">
+            </div>
+            <div id="right-menu">
+                <div id="cart-wrapper">
+
+                    <p id="items-count">0</p>
+                    <a href="./checkout.html"> <i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <img src="https://edyodalms.s3.amazonaws.com/media/profilepictures/IMG_20200107_101813011.jpg"
+                    alt="avator_pic" />
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="cart">
+            <h1>Checkout</h1>
+            <div class="cart-container">
+                <div class="left-side">
+                    <p>Total Items: <span id="number-of-item"></span></p>
+                    <div class="cart-items" id="cart-item-container"></div>
+                </div>
+                <div class="right-side">
+                    <div class="total-amount">
+                        <h2>Total Amount</h2>
+                        <p>Total Amount: Rs <span id="total-amount"></span></p>
+                        <a href="./orderconfirm.html">
+                            <button id="place-order">Place Order</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <img id="edyoda-projects-logo" src="./assets/projects-logo.png" alt="edyoda-projects-logo">
+
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="#" class="footers">Men Clothing</a>
+            <a href="#" class="footers">Women Clothing</a>
+            <a href="#" class="footers">Men Accessories</a>
+            <a href="#" class="footers">Women Accessories</a>
+        </div>
+
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="#" class="footers">Home</a>
+            <a href="#" class="footers">About</a>
+            <a href="#" class="footers">Contact</a>
+
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="#" class="footers">zara</a>
+            <a href="#" class="footers">pantaloons</a>
+            <a href="#" class="footers">levis</a>
+            <a href="#" class="footers">ucb</a>
+            <a href="#" class="footers">+many more</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p class="footers">building 101</p>
+            <p class="footers">central avenue</p>
+            <p class="footers">la 902722</p>
+            <p class="footers">united states</p>
+        </div>
+
+    </footer>
+    <script src="./default.js"></script>
+    <script src="checkout.js"></script>
+</body>
+
+</html>
